@@ -1627,11 +1627,11 @@ _arguments -s -S \
   # Non-option arguments remain in +argv+.
   #
   def parse!(argv = default_argv)
-    if ENV.include?('POSIXLY_CORRECT')
-      order!(argv)
-    else
+    #if ENV.include?('POSIXLY_CORRECT')
+    #  order!(argv)
+    #else
       permute!(argv)
-    end
+    #end
   end
 
   #
