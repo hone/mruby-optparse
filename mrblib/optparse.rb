@@ -1358,7 +1358,7 @@ _arguments -s -S \
 
       # anything others
       case o
-      when Proc, Method
+      when Proc
         block = notwice(o, block, 'block')
       when Array, Hash
         case pattern
